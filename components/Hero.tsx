@@ -23,12 +23,19 @@ const Hero = (props: Props) => {
         <img
           src="https://utfs.io/f/507ed529-4ae5-49c9-ad2c-034d9b395adf-ytcf3j.png"
           alt="hero-img"
-          className="aspect-video w-[600px] h-[350px] xl:w-[800px] xl:h-[450px] object-cover rounded-lg border-2 border-gray-600"
+          className="aspect-video w-[600px] h-[350px] xl:w-[800px] xl:h-[450px] object-cover rounded-lg border-2 border-gray-600 overflow-hidden"
         />
+        <p className="font-extrabold text-sm text-yellow-500">
+          Enrollment closes on 20 April 2024
+        </p>
         <Button className="bg-pinkBrand text-xl text-white py-2 px-8 rounded-lg animate-bounce transition-all duration-1000 delay-1000">
           Reserve Your Seat At ₹299/-
         </Button>
       </div>
+      <p className="text-center font-medium text-lg break-words">
+        🔴Don’t waste time designing posts and writing long captions to Grow on
+        instagram.
+      </p>
     </div>
   );
 };

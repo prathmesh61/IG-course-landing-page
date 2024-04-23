@@ -1,18 +1,19 @@
 import CaseStudy from "@/components/CaseStudy";
 import Desire from "@/components/Desire";
+import Growth from "@/components/Growth";
 import Heading from "@/components/Heading";
 import Hero from "@/components/Hero";
 
 export default function Home() {
   return (
-    <main className="container p-10">
+    <main className="max-w-[1280px] mx-auto ">
       <Hero />
       <div className="mt-40 flex flex-col justify-center items-center gap-20">
-        <div className="flex flex-col gap-4 justify-center items-center">
+        <div className="flex flex-col gap-4 justify-center items-center  px-5">
           <Heading className="bg-pinkBrand text-white py-2 px-5 rounded-lg text-center">
             Unlock Special Bonuses worth ₹20,000
           </Heading>
-          <p className="text-center font-medium text-lg break-words">
+          <p className="text-center font-medium text-sm break-words">
             🔴Don’t waste time designing posts and writing long captions to Grow
             on instagram.
           </p>
@@ -36,6 +37,7 @@ export default function Home() {
         />
       </div>
       <Desire />
+      <Growth />
     </main>
   );
 }

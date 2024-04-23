@@ -12,7 +12,7 @@ type Props = {
 
 const CaseStudy = ({ headline, imgURL, subHeadline, rowDirection }: Props) => {
   return (
-    <div className=" flex flex-col gap-8 justify-center items-center">
+    <div className="flex flex-col gap-8 justify-center items-center px-4">
       <div
         className={cn(
           "flex flex-wrap gap-3 justify-center items-center ",
@@ -22,13 +22,13 @@ const CaseStudy = ({ headline, imgURL, subHeadline, rowDirection }: Props) => {
         <img
           src={imgURL}
           alt="case-study"
-          className="object-cover object-center xl:w-[700px] xl:h-[400px] w-[500px] h-[300px]"
+          className="object-contain md:w-[700px] w-[400px] h-auto px-4"
         />
-        <div className="flex flex-col gap-y-4">
-          <h2 className="font-bold text-3xl w-[500px] text-center">
+        <div className="flex flex-col justify-center items-center gap-y-4">
+          <h2 className="font-bold text-xl md:text-3xl  text-center text-wrap">
             {headline}
           </h2>
-          <SubHeading className=" rounded-lg px-3 py-1 bg-[#1A1A1A] border-2 border-gray-500">
+          <SubHeading className="md:w-full w-fit md:text-xl text-sm rounded-lg px-3 py-1 bg-[#1A1A1A] border-2 border-gray-500">
             ✅ {subHeadline}
           </SubHeading>
         </div>

@@ -3,6 +3,7 @@ import Desire from "@/components/Desire";
 import Growth from "@/components/Growth";
 import Heading from "@/components/Heading";
 import Hero from "@/components/Hero";
+import Accordian from "@/components/Accordian";
 
 export default function Home() {
   return (
@@ -38,6 +39,7 @@ export default function Home() {
       </div>
       <Desire />
       <Growth />
+      <Accordian />
     </main>
   );
 }

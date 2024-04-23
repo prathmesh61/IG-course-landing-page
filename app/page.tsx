@@ -4,6 +4,7 @@ import Growth from "@/components/Growth";
 import Heading from "@/components/Heading";
 import Hero from "@/components/Hero";
 import Accordian from "@/components/Accordian";
+import CTA from "@/components/CTA";
 
 export default function Home() {
   return (
@@ -40,6 +41,7 @@ export default function Home() {
       <Desire />
       <Growth />
       <Accordian />
+      <CTA />
     </main>
   );
 }

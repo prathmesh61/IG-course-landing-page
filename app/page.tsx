@@ -1,21 +1,27 @@
 import CaseStudy from "@/components/CaseStudy";
+import Desire from "@/components/Desire";
 import Heading from "@/components/Heading";
 import Hero from "@/components/Hero";
-import SubHeading from "@/components/SubHeading";
 
 export default function Home() {
   return (
     <main className="container p-10">
       <Hero />
-      <div className="mt-28 flex flex-col justify-center items-center gap-20">
-        <Heading className=" bg-pinkBrand text-white py-2 px-5 rounded-lg text-center">
-          Unlock Special Bonuse worth ₹20,000
-        </Heading>
+      <div className="mt-40 flex flex-col justify-center items-center gap-20">
+        <div className="flex flex-col gap-4 justify-center items-center">
+          <Heading className="bg-pinkBrand text-white py-2 px-5 rounded-lg text-center">
+            Unlock Special Bonuses worth ₹20,000
+          </Heading>
+          <p className="text-center font-medium text-lg break-words">
+            🔴Don’t waste time designing posts and writing long captions to Grow
+            on instagram.
+          </p>
+        </div>
         <CaseStudy
           imgURL="https://utfs.io/f/ee7fbc2f-822c-4ab7-becc-2e8e5c3fa972-abxak.png"
           headline="
           Make your post go VIRAL and reach millions of people"
-          subHeadline="Elevate Your Instagram Game: Masterclass Edition"
+          subHeadline="Full Case Study: Masterclass Edition"
         />
         <CaseStudy
           imgURL="https://utfs.io/f/1052e015-9fd0-40c0-82a0-f73031c69ee6-dcrk40.png"
@@ -29,6 +35,7 @@ export default function Home() {
           subHeadline="Learn From the Best to Become the Bests"
         />
       </div>
+      <Desire />
     </main>
   );
 }

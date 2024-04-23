@@ -28,8 +28,8 @@ const CaseStudy = ({ headline, imgURL, subHeadline, rowDirection }: Props) => {
           <h2 className="font-bold text-3xl w-[500px] text-center">
             {headline}
           </h2>
-          <SubHeading className="border-2 border-gray-400 rounded-lg px-3 py-1">
-            ✅{subHeadline}
+          <SubHeading className=" rounded-lg px-3 py-1 bg-[#1A1A1A] border-2 border-gray-500">
+            ✅ {subHeadline}
           </SubHeading>
         </div>
       </div>

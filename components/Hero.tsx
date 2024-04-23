@@ -32,10 +32,6 @@ const Hero = (props: Props) => {
           Reserve Your Seat At ₹299/-
         </Button>
       </div>
-      <p className="text-center font-medium text-lg break-words">
-        🔴Don’t waste time designing posts and writing long captions to Grow on
-        instagram.
-      </p>
     </div>
   );
 };
